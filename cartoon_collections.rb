@@ -13,3 +13,5 @@ def summon_captain_planet(calls)
   calls.map { |c| upcase << c.capitalize + "!" }
   upcase
 end
+
+def 
