@@ -7,3 +7,7 @@ def roll_call_dwarves(array)
 end
 puts new
 end
+
+def summon_captain_planet(calls)
+  
+end
