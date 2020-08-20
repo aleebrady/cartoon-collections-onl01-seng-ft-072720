@@ -10,8 +10,6 @@ end
 
 def summon_captain_planet(calls)
   upcase = []
-  calls.map do |c|
-    upcase << c.capitalize + "!"
-  end
+  calls.map { |c| upcase << c.capitalize + "!" }
   upcase
 end
