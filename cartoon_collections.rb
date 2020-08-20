@@ -1,23 +1,33 @@
 require 'pry'
 
 def roll_call_dwarves(array)
-  new = []
-  array.each_with_index do |d, i|
-    new << "#{i + 1} #{d}"
-end
-puts new
+  new_array = []
+<<<<<<< HEAD
+  array.each_with_index do |item, index|
+    new_array << "#{index + 1} #{item}"
+  end
+  puts new_array
+=======
+  
+  array.each_with_index do |index, item|
+    new_array << "#{index + 1} #{items}"
+  end
+  new_array
+>>>>>>> af439b107b59463a9b5455bc9600a64bf927e4f8
 end
 
-def summon_captain_planet(calls)
-  upcase = []
-  calls.map { |c| upcase << c.capitalize + "!" }
-  upcase
+def summon_captain_planet(planeteer_calls)
+  all_caps = []
+  planeteer_calls.map do |item|
+    all_caps << item.capitalize + "!"
+  end
+  all_caps
 end
+
 
 def long_planeteer_calls(word)
-  new = []
-  word.each do |w|
-    if w.length > 4 
+  word.each do |item|
+    if item.length > 4 
       return true 
     end
   end
@@ -25,12 +35,12 @@ def long_planeteer_calls(word)
 end
 
 def find_the_cheese(food)
-  new = []
+  new_array = []
   cheese_types = ["cheddar", "gouda", "camembert"]
-  food.each do |f|
-    if cheese_types.include?(f)
-      new << f 
+  food.each do |item|
+    if cheese_types.include?(item)
+      new_array.push(item)
     end
   end
-  return new[0]
+  return new_array[0]
 end
