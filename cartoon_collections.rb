@@ -23,3 +23,8 @@ def long_planeteer_calls(word)
   end
   return false 
 end
+
+def find_the_cheese(food)
+  new = []
+  
+end
