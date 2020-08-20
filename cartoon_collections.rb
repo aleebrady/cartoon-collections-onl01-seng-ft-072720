@@ -14,4 +14,6 @@ def summon_captain_planet(calls)
   upcase
 end
 
-def 
+def long_planeteer_calls(word)
+  
+end
