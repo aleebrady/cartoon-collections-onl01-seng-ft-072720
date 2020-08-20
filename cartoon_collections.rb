@@ -1,9 +1,17 @@
 def roll_call_dwarves(array)
   new_array = []
+<<<<<<< HEAD
   array.each_with_index do |item, index|
     new_array << "#{index + 1} #{item}"
   end
   puts new_array
+=======
+  
+  array.each_with_index do |index, item|
+    new_array << "#{index + 1} #{items}"
+  end
+  new_array
+>>>>>>> af439b107b59463a9b5455bc9600a64bf927e4f8
 end
 
 def summon_captain_planet(planeteer_calls)
