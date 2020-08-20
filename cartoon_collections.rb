@@ -30,6 +30,7 @@ def find_the_cheese(food)
   food.each do |f|
     if cheese_types.include?(i)
       new << i 
+      bindning.pry
     end
   end
   return new[0]
