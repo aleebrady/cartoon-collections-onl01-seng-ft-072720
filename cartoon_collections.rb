@@ -9,5 +9,9 @@ puts new
 end
 
 def summon_captain_planet(calls)
-  
+  upcase = []
+  calls.map do |c|
+    upcase << c.capitalize + !
+  end
+  upcase
 end
